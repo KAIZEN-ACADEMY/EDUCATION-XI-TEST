@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TEST EXAM</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+   <h3 class="exam-title">UNIT TEST</h3>
+   <h3>Subject - English</h3>
+   <h3>Class-XI</h3>
+   <h3>Marks - 25</h3>
+   <div class="exam-timer" id="examTimer">00:00:00</div>
+</nav>
+
+<div class="container">
+  <div class="timer-inputs" id="timerInputs">
+    <input type="number" id="hours" placeholder="HH" min="0">
+    <input type="number" id="minutes" placeholder="MM" min="0" max="59">
+    <input type="number" id="seconds" placeholder="SS" min="0" max="59">
+  </div>
+  <button id="startBtn" onclick="startExam()">Conduct Exam</button>
+
+  <div class="countdown" id="countdownDisplay"></div>
+  <div class="goodluck" id="goodluckText">✨ All the Best Students! ✨</div>
+  <div class="question-paper" id="questionPaper">
+
+    <div class="question">
+      <span style="color: red;">1. Answer the following questions:</span>
+      <span style="color: yellow; margin-left: 30px;">(1x5=5)</span>
+    </div>
+
+    <div class="question">
+      (a) “Educate as the creation of a sound mind in a sound body” – Who gave this definition? <br>
+      “শিক্ষাই সুস্হ দেহত সুস্হ মনৰ সৃষ্টি কৰে”। -  এই সংজ্ঞাটো কোনে আগবঢ়াইছিল?
+    </div>
+
+    <div class="question">
+      (b) What is the meaning of the word “currere”? <br>
+      “Currere” শব্দৰ অৰ্থ কি?
+    </div>
+
+    <div class="question">
+      (c) Write the formula of IQ. <br>
+      বুদ্ধাংকৰ(IQ) সূত্ৰটো লিখা।
+    </div>
+
+    <div class="question">
+      (d) What is the range of IQ of Moron Students? <br>
+      মূঢ়ধী শিক্ষাৰ্থীৰ বুদ্ধাংকৰ পৰিসৰ কিমান?
+    </div>
+
+    <div class="question">
+      (e) Mention an advantage of computer. <br>
+      কম্পিউটাৰৰ এটা সুবিধা উল্লেখ কৰা।
+    </div>
+
+    <div class="question">
+      2. Discuss two importance of vocational aims of education. <br>
+      বৃত্তিমুখী লক্ষ‍্যৰ দুটা প্ৰয়োজনীয়তা আলোচনা কৰা।
+      <span style="color: yellow; margin-left: 30px;">2</span>
+    </div>
+
+    <div class="question">
+      3. What is meant by education is a Bio-polar as well as Tri-polar process? <br>
+      সংকীর্ণ আৰু ব‍্যাপক অৰ্থত শিক্ষা বুলিলে কি বুজা?
+      <span style="color: yellow; margin-left: 30px;">2</span>
+    </div>
+
+    <div class="question">
+      4. Write the meaning of growth and development. <br>
+      বৃদ্ধি আৰু বিকাশৰ অৰ্থ লিখা।
+      <span style="color: yellow; margin-left: 30px;">2</span>
+    </div>
+
+    <div class="question">
+      5. What is meant by Homosexuality? <br>
+      সমকামিতা বুলিলে কি বুজা?
+      <span style="color: yellow; margin-left: 30px;">2</span>
+    </div>
+
+    <div class="question">
+      6. Write two characteristics of development. <br>
+      বিকাশৰ ২টা বৈশিষ্ট‍্য লিখা।
+      <span style="color: yellow; margin-left: 30px;">2</span>
+    </div>
+
+    <div class="question">
+      7. Mention two educational importance of Library. <br>
+      পুথিভঁড়ালৰ দুটা প্ৰয়োজনীয়তা উল্লেখ কৰা।
+      <span style="color: yellow; margin-left: 30px;">2</span>
+    </div>
+
+    <div class="question">
+      8. Write the differential between formal and non formal education. <br>
+      আনুষ্ঠানিক আৰু অনৌপচাৰিক শিক্ষাৰ মাজৰ পাৰ্থক‍্যসমূহ লিখা।
+      <span style="color: yellow; margin-left: 30px;">4</span>
+    </div>
+
+    <div class="question">
+      9. Adolescence is a period of “storm and stress” – Discuss four problems of adolescence, highlighting this statement. <br>
+      কৈশোৰকালক “ধুমুহা আৰু উৎপীড়নৰ” সময় বুলি কোৱা হয়- এই উক্তিৰ ভিত্তিত কৈশোৰকালৰ ৪টা সমস্যাৰ বিষয়ে আলোচনা কৰা।
+      <span style="color: yellow; margin-left: 30px;">4</span>
+    </div>
+
+  </div>
+
+  <div class="final-screen" id="finalScreen">
+    <h2>⏰ Time Out! Submit your answer sheet.</h2>
+    <ul>
+      <li>Full marks - 25</li>
+      <li>Pass marks - Undefined</li>
+    </ul>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
